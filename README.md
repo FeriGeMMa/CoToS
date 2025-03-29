@@ -29,17 +29,17 @@ To decimate the object run: `java -jar CoToS-1.0-SNAPSHOT.jar c bunny.obj` **(ob
 
 ![Input model](./img/bunnyVoronoiBefore.png)
 
-**Output**
+**Decimated output**
 
 ![Input model](./img/BunnyVoronoiAfter.png)
 
-**Closeup**
+**Decimated output closeup**
 
 ![Input model](./img/BunnyVoronoiClose.png)
 
 To reconstruct the decimated object run: `java -jar CoToS-1.0-SNAPSHOT.jar d bunny.obj.CoToS`
 
-**Output**
+**Reconstructed output**
 
 ![Input model](./img/bunnyVoronoiAfterRec.png)
 
