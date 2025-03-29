@@ -27,20 +27,20 @@ To decimate the object run: `java -jar CoToS-1.0-SNAPSHOT.jar c bunny.obj` **(ob
 
 **Input**
 
-![Input model](./img/bunnyVoronoiBefore.png)
+![Input](./img/bunny_before.png)
 
 **Decimated output**
 
-![Input model](./img/BunnyVoronoiAfter.png)
+![Decimated output](./img/bunny_after_dec.png)
 
 **Decimated output closeup**
 
-![Input model](./img/BunnyVoronoiClose.png)
+![Decimated output closeup](./img/bunny_after_dec_close.png)
 
 To reconstruct the decimated object run: `java -jar CoToS-1.0-SNAPSHOT.jar d bunny.obj.CoToS`
 
 **Reconstructed output**
 
-![Input model](./img/bunnyVoronoiAfterRec.png)
+![Reconstructed output](./img/bunny_after_rec.png)
 
 
