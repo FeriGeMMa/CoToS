@@ -4,19 +4,19 @@ This program performs a triangular mesh decimation and reconstruction.
 
 ### Compilation
 Execute command in the root folder:
- `mvn clean install` **(JDK11 or higher required)**
+`mvn clean install` **(JDK11 or higher required)**
 
 ### Running
 Once compilation is complete, extract the contents of the `CoToS-1.0-SNAPSHOT-release.zip` archive to a suitable directory.
 
-Using command prompt (ob bash), execute the command: `java -jar CoToS-1.0-SNAPSHOT.jar`
+Using command prompt (or bash), execute the command: `java -jar CoToS-1.0-SNAPSHOT.jar`
 
 This will print out usage:
 
 ```
 $ java -jar CoToS-1.0-SNAPSHOT.jar
-Compress: c input.[obj|stl|...any assimp supported format].
-Decompress: d input.[obj|stl|...any assimp supported format].CoToS
+Decimate: c input.[obj|stl|...any assimp supported format].
+Reconstruct: d input.[obj|stl|...any assimp supported format].CoToS
 ```
 
 *3D object reading and writing is done using ASSIMP (https://github.com/kotlin-graphics/assimp)*
@@ -25,17 +25,22 @@ Decompress: d input.[obj|stl|...any assimp supported format].CoToS
 
 To decimate the object run: `java -jar CoToS-1.0-SNAPSHOT.jar c bunny.obj` **(object must be a watertight triangular mesh)**
 
-** Input **
+**Input**
 
 ![Input model](./img/bunnyVoronoiBefore.png)
 
-** Output **
+**Output**
 
 ![Input model](./img/BunnyVoronoiAfter.png)
 
-** Closeup **
+**Closeup**
 
 ![Input model](./img/BunnyVoronoiClose.png)
 
 To reconstruct the decimated object run: `java -jar CoToS-1.0-SNAPSHOT.jar d bunny.obj.CoToS`
+
+**Output**
+
+![Input model](./img/bunnyVoronoiAfterRec.png)
+
 
