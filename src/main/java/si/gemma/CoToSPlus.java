@@ -2,22 +2,22 @@ package si.gemma;
 
 import java.io.IOException;
 
-public class CoToS extends CoToSCommon {
+public class CoToSPlus extends CoToSCommon {
 
-  public CoToS() {
-    setExt(_ext);
+  public CoToSPlus() {
+    setExt(_extP);
   }
 
   public static void main(String[] args) {
 
-    CoToS coToS = new CoToS();
+    CoToSPlus coToS = new CoToSPlus();
 
     if (args.length != 2) {
       printUsage();
     } else if (args[0].equals("c")) {
       // Compress.
       try {
-        coToS.compress(args[1], OptimizationType.Single);
+        coToS.compress(args[1], OptimizationType.Double);
       } catch (IOException e) {
         e.printStackTrace();
       }
